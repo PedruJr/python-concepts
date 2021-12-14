@@ -24,5 +24,16 @@ os conjuntos sets são referenciados por {} como os dicionarios/mapa
 
 s = set({ 1, 2, 3, 4, 5, 6, 9, 9, 2, 3})
 
-print(s)
+#forma 2 a mais comum
+ss = {1, 2, 3, 4, 5, 6, 6}
+
+#podemos utilizar o metodo set em strings, transformando cada letra em
+#espaço do conjunto como um item da lista, alem disso
+
+#podemos tambem listar uma lista sem valores repetidos usando o metodo nativo
+#set(lista)
+#podemos saber a quantidade de elementos unicos combinando set e len
+
+
+
 
