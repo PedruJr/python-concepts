@@ -9,7 +9,4 @@ Parametro definidos são os parametros que sao instanciados com um valor,
 varivaveis locais sobreepoem as globais, se puder evite var globais
 
 podemos apontar para global com a declaração de global antes de var
-
-
-
 """
