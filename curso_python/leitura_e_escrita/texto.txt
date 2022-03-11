@@ -1,3 +1,2 @@
 estou aprendendo a manipular elementos txts dentro do python atravez do OPEN()
-
-Dunder main
+segunda parte so le se aplicar o read novamente
