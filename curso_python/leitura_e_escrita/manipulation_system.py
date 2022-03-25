@@ -42,6 +42,43 @@ os.mkdir('home/dev/templates')
 os.makedirs('homes/Xerock/templates')
 
 #Renomear diretorios
+#Caso diretorio nao exista, retorna um FileNotFoundError
+#Se o diretorio não estiver vazio, retorna um OSError
 os.rename('template/nove', 'geek2')
+os.rename('path/path/fileNameChange.txt', 'path/path/NameChanged.txt')
 
+#Deletar ARQUIVOS APENAS, ao realizar este delete não vai para lixeira
+#No windows não permite deletar arquivos ou processos em uso
+#Caso arquivo não exista, FileNotFoundError
+#Caso seja um diretorio e não um arquivo, erro de IsADirectory
+os.remove('path/path/fileNameChange.txt')
 
+#Remover DIRETORIOS apenas vazios, com conteudo dentro retorna um erro IsNotEmpty
+os.rmdir('path/directory')
+
+#Remover arvore de diretorios com conteudos dentro combinando as funçoes
+for arquivo in os.scandir('geek2'):
+    if arquivo.is_file():
+        os.remove(arquivo.path)
+
+#Remover de forma pythonica diretorios vazios
+os.removedirs('path/path/directorys')
+
+#Podemos baixar uma biblioteca chamada send2trash para enviar para a lixeira
+#possibilitando a restauração
+
+#Arquivos e Diretorios temporarios.
+import tempfile
+
+with tempfile.TemporaryDirectory() as tmp:
+    print(f'Criei o diretório temporário em {tmp}')
+    with open(os.path.join(tmp, 'arquivo_temporariro.txt'), 'w') as arquivo:
+        arquivo.write('Geek \n')
+        input()
+
+# Criando um diretorio temporario, entrando nele e criando um arquivo escrevendo um texto
+# Usamos um input para manter os arquivos temporarios vivos dentro do bloco with
+# Em arquivos temporarios so conseguimos escrever bits, por isso b antes da string, para converter
+with tempfile.TemporaryFile() as tmp:
+    tmp.write(b'Geek\n')
+    print(tmp.read())
