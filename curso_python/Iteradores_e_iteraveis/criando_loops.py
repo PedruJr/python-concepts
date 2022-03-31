@@ -21,3 +21,4 @@ def meu_for(iteravel):
             print(next(it))
         except StopIteration:
             break
+
