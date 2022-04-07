@@ -36,4 +36,5 @@ def apresentando():
 #So precisamos chamar a funçao agora e ela ja esta usando o decorator
 apresentando()
 
-#Podemos decorar com mais @Decorators
+#Podemos decorar com mais @Decorators indicamos qual é o metodo que ele vai decorar
+# Função sendo enviada como parametro
