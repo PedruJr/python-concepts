@@ -22,4 +22,4 @@ def repete_msg(msg, vezes):
 def dividir(a, b):
     print(a/b)
 
-dividir('1', 5)
+dividir('1', 5w)
