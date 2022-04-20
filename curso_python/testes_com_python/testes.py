@@ -4,7 +4,7 @@
 """
 import unittest
 #importar metodos a serem testados
-from atividades import comer, dormir
+from atividades import comer, dormir, eh_engracada
 #Providencia varios metos de assert herdar de 'unittest.TestCase'
 class AtividadeTestes(unittest.TestCase):
 
@@ -35,6 +35,11 @@ class AtividadeTestes(unittest.TestCase):
             dormir(8),
             'Ptz! Dormi muito! Estou atrasado para o trabalho!'
         )
+
+    def test_eh_engracada(self):
+        """Testando se é uma pessoa engraçada"""
+        self.assertFalse(eh_engracada('Sergio Malandro'))
+        self.assertTrue(eh_engracada('Jim Carrey'),'Jim deveria ser engraçado')
 
 
 #Ao executar este arquivo como main, executara os testes do contrario

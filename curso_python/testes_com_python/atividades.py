@@ -16,4 +16,12 @@ def dormir(horas):
     if horas >= 8:
         return f'Ptz! Dormi muito! Estou atrasado para o trabalho!'
     else:
-        return f'Continuo cansado apos dormir por {horas} horas..'
+        return f'Continuo cansado apos dormir por {horas} horas.'
+
+
+def eh_engracada(pessoa):
+    if pessoa == 'Sergio Malandro':
+        return False
+    if pessoa == 'Jim Carrey':
+        return 'Jim deveria ser engraçado'
+    return True
