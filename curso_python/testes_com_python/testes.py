@@ -19,7 +19,7 @@ class AtividadeTestes(unittest.TestCase):
         """Testando retorno com comida não saudavel"""
         self.assertEqual(
             comer(comida='Pizza', e_saudavel=False),
-            'Estou comendo Pizza porque a gente so vive uma vez.'
+            'Hmmm... Jessiquinha.'
         )
 
     def test_dormir_pouco(self):
