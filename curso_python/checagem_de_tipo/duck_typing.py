@@ -7,6 +7,11 @@
     Type Hinting:
     -> Solução formal de formatação para apontar o tipo de dado
 
+    Vantagens Type Hinting:
+    -> Melhora o auto complete das IDES
+    -> Pequena queda de performance
+    -> Software robusto, estruturado, redução de bugs
+    -> Uso opcional
 """
 #Type Hinting:   #tipo de dado -> tipo de dado de retorno
 def cumprimentar(nome: str) -> str:
