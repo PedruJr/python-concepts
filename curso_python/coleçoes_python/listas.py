@@ -1,23 +1,20 @@
 """
-Definindo listas
+    Definindo listas
 
-Esta sessão é uma das mais poderosas
-
-Listas em python funcionam como vetores e matrizes, arrays no caso,
+    -> Listas em python funcionam como vetores e matrizes, arrays no caso,
 sao DINAMICO e guardam QUALQUER tipo de dado.
-
-Tipagem de forma dinamica, diferente das linguagens fortemente tipadas
+    -> Tipagem de forma dinamica, diferente das linguagens fortemente tipadas.
 
 """
 
-#criando uma lista utilizando range
+#Criando uma lista utilizando o metodo range().
 lista1 = list(range(11))
 
-#criando uma lista utilizando string
+#Criando uma lista utilizando string.
 lista2 = list('sherek terceiro')
 
-#trigger em lista atravez de if
-#adicionar informaçoes de variaveis de maneira dinamica em string com {nome_var}
+#Trigger em lista atravez de condição if
+#Adicionar informaçoes de variaveis de maneira dinamica em string com {nome_var}
 if 8 in lista1:
     print('8 esta na lista, ativar funcao.')
 else:
@@ -26,40 +23,40 @@ else:
 if 'e' in 'palavre':
     print('letra e nesta palavra')
 
-##Listas podem ser facilmente ordenadas por ordem numerica ou alfabetica .sort()
+##Listas podem ser facilmente ordenadas por ordem numerica ou alfabetica .sort().
 print('string'.sort())
 
-##Calcular o numero de correspondencias de um valor e m uma lista atravez do count
-print(lista1.count(1)) ##resultado em numero int
+##Calcular o numero de correspondencias de um valor e m uma lista atravez do count.
+print(lista1.count(1)) ##resultado em numero int.
 
-## Adicionar elementos em listas, utilizamos a função append, adicionamos apenas um
-##elemento por vez
-## Porem podemos adicionar um array dentro da lista Ex: append([lista])
+##Adicionar elementos em listas, utilizamos a função append, adicionamos apenas um
+##elemento por vez.
+## Porem podemos adicionar um array dentro da lista Ex: append([lista]).
 lista1.append(1)
 lista1.append([1,2,3])
 
-## podemos utilizar arrays para condições
+##Podemos utilizar arrays para condições.
 if [5,4,3] in lista1:
     print('Econtrei a lista');
 else:
     print('Nao encontrei a lista')
 
-##Extende faz a mesma coisa que append, porem adicionar os valores individualmente cada um em
-##um espaço do array
+##extend() faz a mesma coisa que append, porem adicionar os valores individualmente cada um em
+##um espaço do array, podemos adicionar multiplos valores de uma vez em uma lista.
 lista1.extend([123,44,67])
 
-##inserindo em uma posição exata do array
-lista1.insert(2, "novo valor") ##na posicação 2 um novo valor
+##insert() inserindo em uma posição exata do array.
+lista1.insert(2, "novo valor") ##na posicação 2 um novo valor.
 
-##juntar listas
+##Unir listas.
 lista3 = lista1 + lista2
 lista1.extend(lista2)
 
 ##apresentar a lista ao contrario
-lista1.reverse()
-lista1[::-1]
+lista1.reverse() ## Metodo
+lista1[::-1] # Sintaxe
 
-##copiar uma lita
+##copiar uma lista
 lista3 = lista1.copy()
 
 ##tamanho da lista atravez do .len()
@@ -75,15 +72,17 @@ lista1.clear()
 ##podemos multiplicar o conteudo dos arrays fazendo lista * numero
 lista1 = lista1 * 2
 
-##transformar uma string em uma lista de palavras com .split()
+##.split() transformar uma string em uma lista de palavras com .split()
 ##podemos definir seu separador atravez de um parametro indicando
 ##Ex lista1.split('.')
 'string maneira'.split()
 
-##separar elementos em uma string por um parametro definido "' '" espaço definido como parametro
+##.join(lista1) separar elementos em uma string por um parametro definido "' '"
+#espaço definido como parametro.
 string = ' '.join(lista1)
 
-## podemos misturar dados em um array
+
+## Podemos misturar dados em um array.
 
 ##Iterando listas
 ##Ex for:

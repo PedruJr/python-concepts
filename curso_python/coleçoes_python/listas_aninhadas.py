@@ -1,18 +1,15 @@
 """
-Listas Aninhadas (Nested List)
-
--Algumas linguagens tem estruturas de dados chamadas arrays
-    - Unidimensionais(Arrays/Vetores);
-    - Multidimensionais(Matrizes);
-
-- Em python sao as listas
-
-numeros = [1, 2, 3, 4, 5,]
+    Listas Aninhadas (Nested List)
+    - Conhecidaas tambem como arrays em linguagens fortemente tipadas, como o java.
+    São de tipo:
+    - Unidimensionais(Arrays/Vetores).
+    - Multidimensionais(Matrizes).
+    - Em python sao as listas.
+        Ex: numeros = [1, 2, 3, 4, 5,]
 
 """
 
 #Exemplos
-
 listas = [[1, 2, 3], [4, 5, 6], [7, 8, 9]] #Matriz 3x3
 
 #Acessando os dados
